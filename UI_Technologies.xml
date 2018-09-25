@@ -1,0 +1,1039 @@
+
+<HTML>
+
+<New_Features>
+
+     HTML5 introduces a number of new elements and attributes that helps in building a modern website. Following are great features introduced in HTML5.
+
+      New Semantic Elements - These are like header, footer, and section.
+		Forms 2.0 - Improvements to HTML web forms where new attributes have been introduced for input tag.
+		Persistent Local Storage - To achieve without resorting to third-party plugins.
+		WebSocket - A a next-generation bidirectional communication technology for web applications.
+		Server-Sent Events - HTML5 introduces events which flow from web server to the web browsers and they are called Server-Sent Events (SSE).
+		Canvas - This supports a two-dimensional drawing surface that you can program with JavaScript.
+		Audio & Video - You can embed audio or video on your web pages without resorting to third-party plugins.
+		Geolocation - Now visitors can choose to share their physical location with your web application.
+		Microdata - This lets you create your own vocabularies beyond HTML5 and extend your web pages with custom semantics.
+		Drag and drop - Drag and drop the items from one location to another location on a the same webpage.
+		
+</New_Features>		
+		
+<HTML_5_Tags>
+
+		List of HTML 5 Tags
+
+		Tag	Description
+		<article/>	This element is used to define an independent piece of content in a document, that may be a blog, a magazine or a newspaper article.
+		<aside/>	It specifies that article is slightly related to the rest of the whole page.
+		<audio/>	It is used to play audio file in HTML.
+		<bdi/>	The bdi stands for bi-directional isolation. It isolates a part of text that is formatted in other direction from the outside text document.
+		<canvas/>	It is used to draw canvas.
+		<data/>	It provides machine readable version of its data.
+		<datalist/>	It provides auto complete feature for textfield.
+		<details/>	It specifies the additional information or controls required by user.
+		<dialog/>	It defines a window or a dialog box.
+		<figcaption/>	It is used to define a caption for a <figure/> element.
+		<figure/>	It defines a self-contained content like photos, diagrams etc.
+		<footer/>	It defines a footer for a section.
+		<header/>	It defines a header for a section.
+		<main/>	It defines the main content of a document.
+		<mark/>	It specifies the marked or highlighted content.
+		<menuitem/>	It defines a command that the user can invoke from a popup menu.
+		<meter/>	It is used to measure the scalar value within a given range.
+		<nav/>	It is used to define the navigation link in the document.
+		<progress/>	It specifies the progress of the task.
+		<rp/>	It defines what to show in browser that don't support ruby annotation.
+		<rt/>	It defines an explanation/pronunciation of characters.
+		<ruby/>	It defines ruby annotation along with <rp/> and <rt/>.
+		<section/>	It defines a section in the document.
+		<summary/>	It specifies a visible heading for <detailed/> element.
+		<svg/>	It is used to display shapes.
+		<time/>	It is used to define a date/time.
+		<video/>	It is used to play video file in HTML.
+		<wbr/>	It defines a possible line break.
+
+</HTML_5_Tags>	
+
+<readDAILYhtml_ARTICLE_ONLINE/>	
+
+</HTML>
+
+<css>
+
+   <readDAILYwebArticleforCSS/>
+
+</css>
+
+<JavaScript>
+   
+    <readDAILYwebArticleforJAVASCRIPT/>
+
+</JavaScript>
+
+<JQUERY>
+
+		What is jQuery
+
+		jQuery is a small and lightweight JavaScript library.
+		jQuery is cross-platform.
+		jQuery means "write less do more".
+		jQuery simplifies AJAX call and DOM manipulation.
+		
+		<dependency>
+		
+				<groupId>org.webjars</groupId>
+				<artifactId>jquery</artifactId>
+				<version>3.2.1</version>
+				
+	    </dependency>
+		
+		"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+		
+		
+		 <readDAILYwebArticleforJQUERY/>
+		 
+		 $(document).ready(function() 
+        {
+		    --write logic
+		});
+		
+		logic
+		-----
+		  $("#newdiv").click(function()
+          {
+                 alert("you clicked!");
+                $("#newdiv").css("color", "blue");
+          });
+		  
+		   $("#newdiv").css("color", "blue");
+		 
+		 
+		 <jQuery_Selectors>
+		 
+		      jQuery Selectors are used to select and manipulate HTML elements. They are very important part of jQuery library.
+
+              With jQuery selectors, you can find or select HTML elements based on their id, classes, attributes, types and much more from a DOM.
+
+              In simple words, you can say that selectors are used to select one or more HTML elements using jQuery and once the element is selected 
+			  then you can perform various operation on that.
+
+              All jQuery selectors start with a dollor sign and parenthesis e.g. $(). It is known as the factory function.
+			  
+			  The $() factory function
+                 Every jQuery selector start with thiis sign $(). This sign is known as the factory function. It uses the three basic building blocks 
+				 while selecting an element in a given document.
+				 
+				 1) Tag Name:	It represents a tag name available in the DOM.
+					For example: $('p') selects all paragraphs'p'in the document.
+			    
+				2)	Tag ID:	It represents a tag available with a specific ID in the DOM.
+					For example: $('#real-id') selects a specific element in the document that has an ID of real-id.
+					
+				3)	Tag Class:	It represents a tag available with a specific class in the DOM.
+					For example: $('real-class') selects all elements in the document that have a class of real-class.
+					
+					.class	$(".primary")	It will select all elements with class="primary"
+					
+		    
+			The $(document).ready() function determines when the full DOM hierarchy is loaded whereas window.onload event is raised when entire window is 
+			loaded including DOM, images, css and other required resources. The DOM loads before entire window loads.
+			
+			window.onload = function () 
+			{
+               alert('window loaded');
+            };
+
+            $(document).ready(function () 
+	   	    {
+               alert('document loaded');
+            });
+			
+			Always dom will be loaded first then entire window so ready functio will be execute first then onload function
+			
+			
+			
+			$('p').append('This is paragraph.');  append text to all 'p' element
+			
+			
+			<all_selector>
+			
+			
+			   Selector	                Example	                         Description
+				*	                   $("*")	                         It is used to select all elements.
+				#id	                   $("#firstname")	                 It will select the element with id="firstname"
+				.class	               $(".primary")	                     It will select all elements with class="primary"
+				class,.class	       $(".primary,.secondary")	It will select all elements with the class "primary" or "secondary"
+				element	               $("p")	It will select all p elements.
+				el1,el2,el3	           $("h1,div,p")	It will select all h1, div, and p elements.
+				:first	               $("p:first")	This will select the first p element
+				:last	               $("p:last")	This will select he last p element
+				:even	               $("tr:even")	This will select all even tr elements
+				:odd	               $("tr:odd")	This will select all odd tr elements
+				:first-child	       $("p:first-child")	It will select all p elements that are the first child of their parent
+				:first-of-type	       $("p:first-of-type")	It will select all p elements that are the first p element of their parent
+				:last-child	           $("p:last-child")	It will select all p elements that are the last child of their parent
+				:last-of-type	       $("p:last-of-type")	It will select all p elements that are the last p element of their parent
+				:nth-child(n)	       $("p:nth-child(2)")	This will select all p elements that are the 2nd child of their parent
+				:nth-last-child(n)	   $("p:nth-last-child(2)")	This will select all p elements that are the 2nd child of their parent, counting from the last child
+				:nth-of-type(n)	       $("p:nth-of-type(2)")	It will select all p elements that are the 2nd p element of their parent
+				:nth-last-of-type(n)	$("p:nth-last-of-type(2)")	This will select all p elements that are the 2nd p element of their parent, counting from the last child
+				:only-child	            $("p:only-child")	It will select all p elements that are the only child of their parent
+				:only-of-type	        $("p:only-of-type")	It will select all p elements that are the only child, of its type, of their parent
+				parent > child	        $("div > p")	It will select all p elements that are a direct child of a div element
+				parent descendant	    $("div p")	It will select all p elements that are descendants of a div element
+				element + next	        $("div + p")	It selects the p element that are next to each div elements
+				element ~ siblings	    $("div ~ p")	It selects all p elements that are siblings of a div element
+				:eq(index)	            $("ul li:eq(3)")	It will select the fourth element in a list (index starts at 0)
+				:gt(no)	                $("ul li:gt(3)")	Select the list elements with an index greater than 3
+				:lt(no)	                $("ul li:lt(3)")	Select the list elements with an index less than 3
+				:not(selector)	        $("input:not(:empty)")	Select all input elements that are not empty
+				:header	                $(":header")	Select all header elements h1, h2 ...
+				:animated	            $(":animated")	Select all animated elements
+				:focus	                $(":focus")	Select the element that currently has focus
+				:contains(text)	        $(":contains('Hello')")	Select all elements which contains the text "Hello"
+				:has(selector)	        $("div:has(p)")	Select all div elements that have a p element
+				:empty	                $(":empty")	Select all elements that are empty
+				:parent	                $(":parent")	Select all elements that are a parent of another element
+				:hidden	                $("p:hidden")	Select all hidden p elements
+				:visible	            $("table:visible")	Select all visible tables
+				:root	                $(":root")	It will select the document's root element
+				:lang(language)	        $("p:lang(de)")	Select all p elements with a lang attribute value starting with "de"
+				[attribute]	            $("[href]")	Select all elements with a href attribute
+				[attribute=value]	    $("[href='default.htm']")	Select all elements with a href attribute value equal to "default.htm"
+				[attribute!=value]	    $("[href!='default.htm']")	It will select all elements with a href attribute value not equal to "default.htm"
+				[attribute$=value]	    $("[href$='.jpg']")	It will select all elements with a href attribute value ending with ".jpg"
+				[attribute|=value]	    $("[title|='Tomorrow']")	Select all elements with a title attribute value equal to 'Tomorrow', or starting with 'Tomorrow' followed by a hyphen
+				[attribute^=value]	    $("[title^='Tom']")	Select all elements with a title attribute value starting with "Tom"
+				[attribute~=value]	    $("[title~='hello']")	Select all elements with a title attribute value containing the specific word "hello"
+				[attribute*=value]	    $("[title*='hello']")	Select all elements with a title attribute value containing the word "hello"
+				:input	$(":input")	    It will select all input elements
+				:text	$(":text")	    It will select all input elements with type="text"
+				:password	            $(":password")	It will select all input elements with type="password"
+				:radio	                $(":radio")	It will select all input elements with type="radio"
+				:checkbox	            $(":checkbox")	Itwill select all input elements with type="checkbox"
+				:submit	                $(":submit")	It will select all input elements with type="submit"
+				:reset	                $(":reset")	It will select all input elements with type="reset"
+				:button	                $(":button")	It will select all input elements with type="button"
+				:image	                $(":image")	It will select all input elements with type="image"
+				:file	                $(":file")	It will select all input elements with type="file"
+				:enabled	            $(":enabled")	Select all enabled input elements
+				:disabled	            $(":disabled")	It will select all disabled input elements
+				:selected	            $(":selected")	It will select all selected input elements
+				:checked	            $(":checked")	It will select all checked input elements
+			
+			</all_selector>
+
+		 <jQuery_Effects>
+		 
+		 
+		
+		    
+			1)  animate()	    performs animation.
+			     $(selector).animate({params}, speed, callback);  
+				 $("div").animate({left: '450px'});  
+			
+			2	clearQueue()	It is used to remove all remaining queued functions from the selected elements.
+			3)	delay()	        sets delay execution for all the queued functions on the selected elements.
+			       $(selector).delay (speed, queueName)   
+			  
+			4	dequeue()	    It is used to remove the next function from the queue, and then execute the function.
+			5)	fadein()	    shows the matched elements by fading it to opaque. In other words, it fades in the selected elements.
+			    $(selector).fadein();  
+				$(selector).fadeIn(speed,callback);   
+				$(selector).fadeIn(speed, easing, callback);
+							
+			
+			
+			
+			6)	fadeout()	    shows the matched elements by fading it to transparent. In other words, it fades out the selected elements.
+			7)	fadeto()	    adjusts opacity for the matched element. In other words, it fades in/out the selected elements.
+			
+			          $(selector).fadeTo(speed, opacity);  
+					  $(selector).fadeTo(speed, opacity, callback);   
+					  $(selector).fadeTo(speed, opacity, easing, callback);  
+			
+			
+			8)	fadetoggle()	shows or hides the matched element. In other words, toggles between the fadeIn() and fadeOut() methods.
+			
+			            $(selector).fadeToggle();  
+						$(selector).fadeToggle(speed,callback);   
+						$(selector).fadeToggle(speed, easing, callback);  
+			9)	finish()	    It stops, removes and complete all queued animation for the selected elements.
+			10)	hide()	        hides the matched or selected elements.
+			
+					$(selector).hide(speed, easing, callback);  			
+					$(selector).hide();  
+					$(selector).hide(speed, callback);  
+			
+			11)	queue()	        shows or manipulates the queue of methods i.e. to be executed on the selected elements.
+			12)	show()	        displays or shows the selected elements.
+			        
+					$(selector).show();  
+					$(selector).show(speed, callback);  
+					$(selector).show(speed, easing, callback);  
+					
+					
+					
+			13)	slidedown()	    shows the matched elements with slide.
+			        $(selector).slideDown(speed);  
+					$(selector).slideDown(speed, callback);   
+					$(selector).slideDown(speed, easing, callback);  
+			
+			14)	slidetoggle()	shows or hides the matched elements with slide. In other words, it is used to toggle between the slideUp() and slideDown() methods.
+			        $(selector).slideToggle(speed);  
+					$(selector).slideToggle(speed, callback);   
+					$(selector).slideToggle(speed, easing, callback);  
+			
+			15)	slideup()	    hides the matched elements with slide.
+			        $(selector).slideUp(speed);  
+					$(selector).slideUp(speed, callback);   
+					$(selector).slideUp(speed, easing, callback);
+			
+			16)	stop()	        stops the animation which is running on the matched elements.
+			17)	toggle()	    shows or hides the matched elements. In other words, it toggles between the hide() and show() methods.
+			     $(selector).toggle();  
+				$(selector).toggle(speed, callback);  
+				$(selector).toggle(speed, easing, callback);  
+				$(selector).toggle(display);  		 
+		     
+			 $(selector).html()  
+				It is used to return content.
+
+				$(selector).html(content)  
+				It is used to set content.
+
+				$(selector).html(function (index, currentcontent))  
+				It is used to set content by calling function.
+				
+				
+				Method Chaining
+				
+				      $("p").animate({width: "100%"}).animate({fontSize: "46px"}).animate({borderWidth: 30});});
+				
+				
+				Callback Functions
+				
+				      $(selector).slideToggle(duration, callback);
+					  $("p").slideToggle("slow", function()
+					  {
+							// Code to be executed once effect is complete
+							alert("The slide toggle effect has completed.");
+					  });
+		 
+		  </jQuery_Effects>
+		 
+		 <Html_CSS>
+		     
+			 css
+			     $("p").css({"background-color": "yellow", "font-size": "200%"}); 
+		     
+             before()	
+                $(selector).before(content, function(index))  
+          
+             prepend()/append()/appendTo()
+                  The jQuery prepend() method is used to insert the specified content at the beginning (as a first child) of the selected elements. 
+				  It is just the opposite of the jQuery append() method.
+                 
+				  $(selector).prepend(content,function(index,html))  
+                  $(content).appendTo(selector)   				  
+		 
+		     after()/insertAfter()
+			     The jQuery after() method is used to insert specified content after the selected element. It is just like jQuery append() method.
+				   $("p").after("<p><b>Hello javatpoint.com</b></p>");  
+				   $(content).insertAfter(selector)
+				   
+			  clone()
+                   The jQuery clone() method is used to make copies of the set of matched elements. It also makes copies of their child nodes, texts and attributes.
+				   The clone() method is a convenient way to duplicate elements on a page.	 
+				   
+                   $(selector).clone(true|false);
+                       
+					$(document).ready(function(){  
+						$("button").click(function(){  
+							$("p").clone().appendTo("body");  
+						});  
+					}); 
+
+              remove()
+						The jQuery remove() method is used to remove the selected elements out of the DOM. It removes the selected element itself, 
+						as well as everything inside it (including all texts and child nodes). This method also removes the data and the events of the selected elements.
+
+						If you want to remove elements without removing data and events, you should use the detach() method. If you want to remove only data 
+						and events, use the empty() method.	
+
+                         $(selector).remove(selector) 	
+                           $( "button" ).click(function() {  
+                           $( "p" ).remove();
+
+                          $("div").empty(); 
+
+                          $("p").detach();  
+					   
+              scrollTop()
+			  
+			               The jQuery scrollTop method is used to set or return the vertical scrollbar position for the selected element. When the scrollbar is on the top, 
+						   it specifies the position 0.
+
+							To return the position: When this method is used to return the position, it provides the current vertical position of the first matched element in the set.
+							To set the position: When this method is used to set the position, it sets the vertical position of the scrollbar for all matched element.
+							
+							  alert($("div").scrollTop() + " px");  
+							  $( "div.demo" ).scrollTop( 300 );  
+							  
+			     attr()
+							The jQuery attr() method is used to set or return attributes and values of the selected elements.
+
+							There are two usage of jQuery attr() method.
+
+							To return attribute value: This method returns the value of the first matched element.
+							To set attribute value: This method is used to set one or more attribute/value pairs of the set of matched elements.
+
+                            To return an attribute's value:
+
+							$(selector).attr(attribute)  
+							To set an attribute and value:
+
+							$(selector).attr(attribute,value)  
+							To set an attribute and value by using a function:
+
+							$(selector).attr(attribute,function(index,currentvalue))  
+							To set multiple attributes and values:
+
+							$(selector).attr({attribute:value, attribute:value,...})   		
+
+                            $("img").attr("width", "500"); 
+    
+	            prop()
+						jQuery prop() method is used for two purpose.
+
+						It is used to return the value of a property for the first element in a set of matched elements.
+						It is used to set one or more property value for a set of matched element.
+						
+						$(selector).prop(property)  
+						To set the property and value:
+
+						$(selector).prop(property,value)  
+						To set property and value by using a function:
+
+						$(selector).prop(property,function(index,currentvalue))  
+						To set multiple properties and values:
+
+						$(selector).prop({property:value, property:value,...})  
+						
+						 $("button").click(function()
+						 {  
+								var $x = $("div");  
+								$x.prop("color","#e0eeee");  
+								$x.append("The value of the color property: " + $x.prop("color"));  
+								$x.removeProp("color");  
+								$x.append(" brNow the value of the color property: " + $x.prop("color"));  
+						  });  
+						  
+						
+                 offset()
+								The jQuery offset() method is used to get the current offset of the first matched element.
+
+								It provides two methods: to set or return the offset co-ordinates for the selected elements, relative to the document.
+
+								To return the offset: When this method is used to return the offset, it returns the offset co-ordinates of the FIRST matched element. 
+								It specifies the object's two properties: the top and left positions in pixels.
+								To set the offset: When this method is used to set the offset, it sets the offset co-ordinates of ALL matched elements.
+								
+								
+								To RETURN the offset co-ordinates:
+
+								$(selector).offset()   
+								To SET the offset co-ordinates:
+
+								$(selector).offset({top:value,left:value})   
+								To SET offset co-ordinates using a function:
+
+								$(selector).offset(function(index,currentoffset)) 
+						
+						   $("button").click(function(){  
+								var x = $("p").offset();  
+								alert("Top: " + x.top + " Left: " + x.left);  
+							}); 
+ 							
+					   
+					 Query position()
+							The jQuery position () method makes you able to retrieve the current position of an element relative to the parent element. 
+							It returns the position of the first matched element. This method returns the object with two properties: top and left position in pixels.
+
+							The jQuery position() method is different from jQuery offset() method because the position() method retrieves the current position 
+							of an element relative to the parent element while the offset() method retrieves the current position relative to the document.
+							The position() method is more useful when you want to position a new element near another one within the same containing DOM element.  
+							
+							 var x = $("p").position();  
+							 
+							 
+					addClass()
+								The addclass() method is used to add one or more class name to the selected element. This method is used only to add one or more class names
+								to the class attributes not to remove the existing class attributes.
+
+								If you want to add more than one class separate the class names with spaces.
+
+								Syntax:
+
+								$(selector).addClass(classname,function(index,oldclass)) 
+
+                                $("p:first").addClass("intro");  
+                      
+					 hasClass()
+					 The jQuery hasClass() method is used to check whether selected elements have specified class name or not. It returns TRUE if the specified class is 
+					 present in any of the selected elements otherwise it returns FALSE.
+
+					Syntax:
+
+					$(selector).hasClass(classname)   
+					
+					 toggleClass()
+					   $("p").toggleClass("main");  
+					   
+			width()
+					jQuery width() method is used to return or set the width of matched element.
+
+					To return width: When this method is used to return the width, it returns the width of first matched element.
+
+					To set width:When this method is used to set the width, it sets the width for every matched element.
+
+					This method is one of a jQuery dimension.
+
+					List of jQuery dimension:
+
+					width()
+					height()
+					innerWidth()
+					innerHeight()
+					outerWidth()
+					outerHeight()		
+
+             wrap()
+                      jQuery wrap() method is used to wrap specified HTML elements around each selected element. The wrap () function can accept any string or object 
+					  that could be passed through the $() factory function.	
+
+                      $("p").wrap("<div></div>");  
+
+             serialize()
+                       jQuery serialize() method is used to create a text string in standard URL-encoded notation. It is used in form 
+					   controls like "<input/>, <textarea./>, <select/> etc. It serializes the form values so that its serialized values can be used in the URL query string while 
+					   making an AJAX request.	
+
+                       $("div").text($("form").serialize());  	
+
+               serializeArray()
+						The jQuery serializedArray() Method is used to create a JavaScript array of objects by serializing form values. It operates on a jQuery collection of
+						forms and form controls. You can select one or more form elements such as <input/>, <textarea/> or the form element itself.
+
+						Syntax:
+
+						$(selector).serializeArray() 
+						 var x = $("form").serializeArray();  
+								$.each(x, function(i, field){  
+									$("#results").append(field.name + ":" + field.value + " ");  
+								});  						
+								
+		 
+		 
+		 </Html_CSS>
+		 
+		 <event>
+		 
+		 
+		 
+				 These are some examples of events.
+
+					A mouse click
+					An HTML form submission
+					A web page loading
+					A keystroke on the keyboard
+					Scrolling of the web page etc.
+					These events can be categorized on the basis their types:
+
+					Mouse Events
+					click
+					dblclick
+					mouseenter
+					mouseleave
+					Keyboard Events
+					keyup
+					keydown
+					keypress
+					Form Events
+					submit
+					change
+					blur
+					focus
+					Document/Window Events
+					load
+					unload
+					scroll
+					resize
+								
+			    
+				
+				click
+				
+				 bind()
+						The jQuery bind() event is used to attach one or more event handlers for selected elements from a set of elements. It specifies a function to run when the event occurs.
+
+						It is generally used together with other events of jQuery.
+
+						Syntax:
+
+						$(selector).bind(event,data,function,map)   
+						
+						
+			   blur()
+                       The jQuery blur event occurs when element loses focus. It can be generated by via keyboard commands like tab key or mouse click anywhere on the page.
+
+                         $("input").blur(function()
+						 {  
+								alert("This text box has lost its focus.");  
+						});  			
+
+              focus()
+						The jQuery focus event occurs when an element gains focus. It is generated by a mouse click or by navigating to it.
+
+						This event is implicitly used to limited sets of elements such as form elements like <input/>, <select/> etc. and links <ahref/>. 
+						The focused elements are usually highlighted in some way by the browsers.
+
+						The focus method is often used together with blur () method.	
+
+                        $( "input" ).focus(function() 
+						{  
+							  $( this ).next( "span" ).css( "display", "inline" ).fadeOut( 2000 );  
+						});  	
+
+             select()
+						jQuery select event occurs when a text is marked or selected in text area or a text field. This event is limited to 
+						input type="text" fields and textarea boxes. When the select event occurs, the select() method attaches a function to run.
+
+						Syntax:
+
+						$(selector).select()  
+						It triggers the select event for selected elements.
+
+						$(selector).select(function) 
+
+						$( ":input" ).select(function() {  
+						  $( "div" ).text( "Some text was selected" ).show().fadeOut( 2000 );  
+						});  	
+
+               change()
+						jQuery change event occurs when the value of an element is changed. It works only on form fields. When the change event occurs, the change () method attaches a function with it to run.
+
+						Note: This event is limited to input elements, textarea boxes and select elements.
+
+						For select boxes, checkboxes, and radio buttons: The event is fired immediately when the user makes a selection with the mouse.
+						For the other element types: The event is occurred when the field loses focus.
+						Syntax:
+
+						$(selector).change()  		
+							$( "select" ) .change(function () {    
+							document.getElementById("loc").innerHTML="You selected: "+document.getElementById("se").value;  
+							});  			
+
+						$( "select" )  
+						  .change(function () {  
+							var str = "";  
+							$( "select option:selected" ).each(function() {  
+							  str += $( this ).text() + " ";  
+							});  
+							$( "div" ).text( str );  
+						  })  
+						  .change();  							
+										
+               
+				submit()
+				        jQuery submit event is sent to the element when the user attempts to submit a form.
+
+				        This event is only attached to the form element. Forms can be submitted either by clicking on the submit button or by pressing the enter button on the keyboard when that certain form elements have focus. When the submit event occurs, the submit() method attaches a function with it to run.			   
+		               
+							   $( "form" ).submit(function( event ) {  
+							  if ( $( "input:first" ).val() === "javatpoint" ) 
+							  { 
+							  
+								$( "span" ).text( "Submitted Successfully." ).show();  
+								return;  
+							  }  
+							  $( "span" ).text( "Not valid!" ).show().fadeOut( 2000 );  
+							  event.preventDefault();  
+							});  
+							
+				keydown()
+								When you press a key on the keyboard, the keydown() event is occurred and once the keydown() event is occurred, it executes the function 
+								associated with keydown() method to run.
+
+								The keydown() event is generally used with two other events.
+
+								Keypress() event: It specifies that the key is pressed down.
+								Keyup() event: It specifies that the key is released.
+								Syntax:
+
+								$(selector).keydown()  
+								It triggers the keydown event for selected elements.
+
+								$(selector).keydown(function)  
+								It adds a function to the keydown event.	
+
+                                $(document).ready(function()
+								{  
+									$("input").keydown(function(){  
+										$("input").css("background-color", "green");  
+									});  
+									$("input").keyup(function(){  
+										$("input").css("background-color", "violet");  
+									});  
+								});  
+                      
+					  keypress()   similer to keydown
+					  
+					  mouseenter()/mouseleave()/hover()/mouseover()
+									The mouseenter() method adds an event handler function to an HTML element. This function is executed, when the mouse pointer enters 
+									the HTML element.
+
+									When you enter your mouse cursor over the selected element, it triggers the mouseenter event and once the mouseenter event is occurred,
+									it executes the mouseenter() method to attach the event handler function to run.
+
+									This event is generally used together with mouseleave() event.
+
+									Syntax:
+
+									$(selector).mouseenter()  
+									It triggers the mouseenter event for selected elements.
+
+									$(selector).mouseenter(function)  
+									
+									$(document).ready(function()
+									{    
+										$("#h1").mouseenter(function(){    
+										   $( "div" ).text( "Mouse entered on heading" ).show().fadeOut( 2000 );   
+										});    
+									});    
+									
+										$(document).ready(function()
+										{  
+												$("p").mouseenter(function(){  
+													$("p").css("background-color", "lightgreen");  
+												});  
+												$("p").mouseleave(function(){  
+													$("p").css("background-color", "yellow");  
+												});  
+											});  			
+																					
+											$(selector).hover(inFunction,outFunction)   $(document).ready(function()
+											{  
+												$("p").hover(function(){  
+													$(this).css("background-color", "violet");  
+													}, function(){  
+													$(this).css("background-color", "green");  
+												});  
+											});  
+
+											
+                  mousedown()
+								The mousedown() method adds an event handler function to an HTML element. This function is executed, when the left mouse button is pressed down,
+								at the time while the mouse is over the HTML element.
+
+								This event is generally used together with mouseup() event.
+
+								Syntax:
+
+								$(selector).mousedown()  
+								It triggers the mousedown event for selected elements.
+
+								$(selector).mousedown(function)  
+                                
+								$(document).ready(function(){    
+									$("#h1").mousedown(function(){    
+									   $( "div" ).text( "mouse down event triggered" ).show().fadeOut( 2000 );   
+									});    
+								});    
+								
+								$(document).ready(function(){  
+										$("p").mousedown(function(){  
+											$("p").css("background-color", "blue");  
+										});  
+										$("p").mouseup(function(){  
+											$("p").css("background-color", "lightyellow");  
+										});  
+									});  
+									
+									-----
+									$( "div.out" )  
+											  .mouseover(function() {  
+												$( this ).find( "span" ).text( "mouse over " );  
+											  })  
+											  .mouseout(function() {  
+												$( this ).find( "span" ).text( "mouse out " );  
+											  });  
+											  
+									----		  
+											  $( "div.out" )  
+														  .mouseover(function() {  
+															$( this ).find( "span" ).text( "mouse over " );  
+														  })  
+														  .mouseout(function() {  
+															$( this ).find( "span" ).text( "mouse out " );  
+														  });  
+
+                                            ---
+											
+				   delegate() $(selector).delegate(childSelector,event,data,function)   							
+				   $( "body" ).delegate( "p", "click", function() {  
+						  $(this ).after( "<p>Click me for another paragraph.</p>" );  
+						}); 							
+								
+		 </event>
+		 
+		 
+		 
+		 
+		 </jQuery_Selectors>
+
+        <JQUERY_UI>
+		   
+		
+		</JQUERY_UI>
+		
+		
+</JQUERY>
+
+<AJAX>
+
+        <readDAILYwebArticleforAJAX/>
+		
+		>>XMLHttpRequest
+			An object of XMLHttpRequest is used for asynchronous communication between client and server.
+
+			It performs following operations:
+
+			Sends data from the client in the background
+			Receives the data from the server
+			Updates the webpage without reloading it.
+		
+		>>Properties of XMLHttpRequest object
+
+					The common properties of XMLHttpRequest object are as follows:
+
+					Property	Description
+					onReadyStateChange	It is called whenever readystate attribute changes. It must not be used with synchronous requests.
+					readyState	represents the state of the request. It ranges from 0 to 4.
+					0	UNOPENED	open() is not called.
+
+					1	OPENED	open is called but send() is not called.
+
+					2	HEADERS_RECEIVED	send() is called, and headers and status are available.
+
+					3	LOADING	Downloading data; responseText holds the data.
+
+					4	DONE	The operation is completed fully.
+
+					reponseText	returns response as text.
+					responseXML	returns response as XML
+			
+		>>Methods of XMLHttpRequest object
+
+			The important methods of XMLHttpRequest object are as follows:
+
+			Method	Description
+			void open(method, URL)	opens the request specifying get or post method and url.
+			void open(method, URL, async)	same as above but specifies asynchronous or not.
+			void open(method, URL, async, username, password)	same as above but specifies username and password.
+			void send()	sends get request.
+			void send(string)	send post request.
+			setRequestHeader(header,value)	it adds request headers.	
+			
+          >>if(window.XMLHttpRequest){  
+					request=new XMLHttpRequest();  
+					}  
+					else if(window.ActiveXObject){  
+					request=new ActiveXObject("Microsoft.XMLHTTP");  
+					} 
+					request.onreadystatechange=getInfo;  
+					request.open("GET",url,true);  
+					request.send();  					
+			function getInfo(){  
+					if(request.readyState==4){  
+					var val=request.responseText;  
+					document.getElementById('amit').innerHTML=val;  
+					}  
+
+
+</AJAX>
+
+<BootsStrap>
+
+        <readDAILYwebArticleforBootsStrap/>
+		  
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+         
+		 What Bootstrap package contains
+				Scaffolding: Bootstrap provides a basic structure with Grid System, link styles, and background.
+
+				CSS: Bootstrap comes with the feature of global CSS settings, fundamental HTML elements style and an advanced grid system.
+
+				Components: Bootstrap contains a lot of reusable components built to provide iconography, dropdowns, navigation, alerts, pop-overs, and much more.
+
+				JavaScript Plugins: Bootstrap also contains a lot of custom jQuery plugins. You can easily include them all, or one by one.
+
+				Customize: Bootstrap components are customizable and you can customize Bootstrap's components, LESS variables, and jQuery plugins to get your own style.
+						 
+		 
+		 
+
+</BootsStrap>
+
+
+<JSON>
+     
+	   <readDAILYwebArticleforJSON/>
+	  
+   <dependency>  
+			<groupId>com.googlecode.json-simple</groupId>  
+			<artifactId>json-simple</artifactId>  
+			<version>1.1</version>  
+   </dependency>  
+
+
+
+</JSON>
+
+<Angular>
+    
+	
+	<ANGULAR_JS_1>
+	
+						  >> HTML(tree of tag is dom)--what needs to be display
+						  >> css---how needs to be display----inline/Block/file modes
+						  >> jAVASCRIPT/Jjquery--- control what needs to be display
+									  compile and interpreted/used to modify dom on browser
+					
+					
+						   >> normal client side code have multiple line of code which 
+							  is not easy to maintain and require ccomplex coading.
+							  
+							  
+						  MVC is supported in angular js.
+								>> it is HTML enhanced/extendeded vocabulary.
+								
+					
+						  javascript:
+						  -----
+							   1. find element
+							   2. run logic
+							   3. update element
+							   
+						  angular:
+						  --------
+							   1. declare element type
+							   2. define logic
+							   3. use element type.
+							   
+							   >> angular is declarative programming.
+							   >> here we create custom elements ans use it by declarative programming  
+							   >> custom elements can be created by directive or components
+								   e.g. slider/ button click and text output.
+					-----------------------   
+							   >> create html
+							   >> add angular
+							   >> create custem-elements/component 
+							   >> use custom-elements
+							   
+					-------------------
+					
+					<setup>
+					
+						visual studio code..
+					
+					</setup>
+					
+	
+	</ANGULAR_JS_1>
+	
+	<ANGULAR_2>
+	
+					<technologies>
+					
+					  1. javascript/ typescript
+					  2. angular
+					  3. angular CLI
+					  4. Reactive programming, RxJS,Obsrvable,operators
+					  5. Jasmine, karma
+					  6. Redux,NgRx
+					
+					</technologies>
+					
+					
+					<UNIT_1_introduction_settingUP_Components>
+					
+					
+						  Traditional--------- HTML-------have--------javascript
+					 
+						  1. angular is component based 
+						  2. devivde page into seperate component
+							  >> like header component, body component etc.
+							  >> and each component are independednt of each other 
+							  >> and each component knows how to deal any action and what to do.
+							  >> it is designed to be used anywhere
+							  >> each component will have html tag/selector which will be used anywhere.
+								  e.g header-section will be ---<header-section> ---</header-section> 
+							  >> each componet/selector/ will have name and will have to register to angular framework.
+							  >> section/componet can have sub-section
+							  >> all secction/component have one main root-component
+								  e.g date component and click component will have root-component to complete action/task.
+					
+					
+					
+						setup
+						-------
+						   1. node js
+						   2. visual code
+						   3. angular CLI
+					
+					
+					
+					</UNIT_1_introduction_settingUP_Components>
+					
+					<UNIT_2_Templates_Databinding_Eventhandling>
+					
+					
+					</UNIT_2_Templates_Databinding_Eventhandling>
+					
+					
+					<UNIT_3_Services_DependencyInjecton_RESTAPIcalls>
+					
+					
+					</UNIT_3_Services_DependencyInjecton_RESTAPIcalls>
+					
+	
+					<UNIT_4_Routing>
+					
+					
+					</UNIT_4_Routing>
+	
+	</ANGULAR_2>
+	
+</Angualar>
+
+<REACT_JS>
+
+</REACT_JS>
+
+
+
+
+
+<IONIC>
+
+    -------
+
+
+</IONIC>
+
+
